@@ -1,13 +1,13 @@
-
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="styles.css">
-  <title>I want to use the React framework </title>
- 
+  <title>Blog with Post Creation ( im wanna use react (●'◡'●) )</title>
 </head>
 <body>
+    <script src="script.js"></script>
 
   <header>
     <h1>This is our blog</h1>
@@ -22,13 +22,17 @@
   </nav>
 
   <main>
-    <article>
-      <h2>Post title</h2>
-      <p>The text of your post...</p>
-    </article>
-  </main>
-  <footer>
-    &copy; 2024 Our blog
-  </footer>
-</body>
+    <div id="posts-container"></div>
 
+    <div id="post-form-container">
+      <label for="title">Title:</label>
+      <input type="text" id="title" name="title" required>
+
+      <label for="content">Content:</label>
+      <textarea id="content" name="content" required></textarea>
+
+      <button type="button" onclick="createPost()">Create Post</button>
+    </div>
+  </main>
+</body>
+</html>
